@@ -98,12 +98,37 @@ function handleCommand(input) {
         /clear - Clears the console
         /help - Show available commands
         /export - Download your diary as .json file format
+        /exportTxt - Download your diary as .txt file format
         /reset - Delete all entries`
 
         addToConsole({ id: Date.now(), date: "System", text: helpText }, "cyan", false);
     }
 
-    // /export baad me lagaunga abhi ke liye pending...!😤😤😤😤
+    else if (lowerInput === "/export") {
+        const entries = JSON.parse(localStorage.getItem("consoleEntries")) || [];
+        const blob = new Blob([JSON.stringify(entries, null, 2)], {type: "application"});
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "console-diary.json";
+        link.click();
+        addToConsole({id: Date.now(), date: "System", text: "Entries exported as JSON."}, "lime", false);
+    }
+
+    else if (lowerInput === "/exporttxt") {
+        const entries = JSON.parse(localStorage.getItem("consoleEntries")) || [];
+        let textContent = "Console Diary Entries:\n\n";
+        
+        entries.forEach(entry => {
+            textContent += `ID: ${entry.id}\nDate: ${entry.date}\nEntry: ${entry.text}\n\n`;
+        });
+
+        const blob = new Blob([textContent], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "console-diary.txt";
+        link.click();
+        addToConsole({ id: Date.now(), date: "System", text: "Entries exported as TXT." }, "lime", false);
+    }
 
     else if (lowerInput === "/reset") {
         if (confirm("Are you sure? This will delete all entries.")) {
