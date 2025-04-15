@@ -1,0 +1,101 @@
+✅ 1. Hero Section (Welcome)
+Welcome to Console Diary 📝
+Your personal digital journal with a developer twist.  
+Log your thoughts, track your ideas, or just type away — all through console commands.
+
+[Enter Console Diary]
+
+
+🧾 2. About Console Diary  
+Console Diary isn't just a journaling tool — it's an experience built for devs and thinkers.  
+Born out of the love for command-line aesthetics and distraction-free writing,  
+this platform lets you log your day like you're writing code.  
+
+Whether you're venting, brainstorming, or reflecting — it’s just you and the console.  
+Stay minimal. Stay focused. Write like a developer.  
+
+
+✨ 3. Features Section
+🚀 Fast, minimal & command-driven interface  
+🧠 No distractions — just type and reflect  
+💾 Entries saved automatically in your browser  
+📤 Export your thoughts as JSON or TXT  
+🗑️ Clear or delete entries with simple commands  
+
+
+🧑‍🏫 4. How It Works
+📌 Step 1: Go to the Console Diary  
+📌 Step 2: Type /help to see all available commands  
+📌 Step 3: Start typing your thoughts!  
+
+Some example commands:
+- /clear → Clear the screen  
+- /reset → Delete all entries  
+- /export → Download diary in .json  
+- /exportText → Download in .txt  
+- /delete <id> → Delete specific entry 
+
+
+💡 5. Why Console Diary?
+Because sometimes, writing feels better when it looks like coding.  
+No UI clutter. No distractions. Just you and your thoughts in terminal style.
+
+
+🙌 6. Footer
+Made with ❤️ by [Your Name]  
+Follow me on [Twitter/GitHub/Whatever]  
+
+
+
+
+
+
+
+
+
+✅ Hero Section Color Theme (Welcome):
+Background: Dark, deep blue (#1d1f27) or charcoal gray (#222).
+
+Text Color: Light lime green (#00FF00) or cyan (#0fac0f).
+
+Button Color: Neon blue (#00aaff) for links or buttons.
+
+✅ About Section Color Theme:
+Background: Very dark gray or soft black (#111111) for subtle separation from hero section.
+
+Text Color: Soft white (#e0e0e0) or light gray for clean readability.
+
+Heading Color: Neon green (#0fac0f) or light lime (#8aff80) to match terminal vibe.
+
+Highlight Words: Use neon purple (#c66fc7) or neon yellow (#ffdb58) for emphasizing dev-style keywords.
+
+Font Style: Monospace (like Fira Code) for consistent developer feel.
+
+Spacing: Add generous padding (like 60px 20px) to breathe between other sections.
+
+✅ Features Section Color Theme:
+Background: Dark gray/black (#121212) to keep it minimal.
+
+Text Color: Light green for bullet points and key text.
+
+Highlight Text: Use neon yellow (#ffdb58) or neon purple (#c66fc7).
+
+✅ How It Works Section:
+Background: Same dark theme for consistency.
+
+Text Color: Soft white or light gray (#e0e0e0).
+
+Highlight Commands: Use cyan or neon yellow for the commands (/clear, /reset, etc.).
+
+✅ Why Console Diary Section:
+Background: A slightly darker blue/gray (#0e1117) to make the text more prominent.
+
+Text Color: Use cyan or light lime (#8aff80).
+
+✅ Footer Section Color Theme:
+Background: Very dark or black (#000).
+
+Text Color: Soft white or light gray (#f5f5f5) for the footer.
+
+Link Color: Use neon blue (#00aaff) for social media or links.
+

@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fira-code-font: "Fira Code", monospace;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+header .logo h2 {
+    color: #25b800;
+    font-family: var(--fira-code-font);
+    font-weight: 400;
+}
+
+.right-side {
+    display: flex;
+}
+
+.right-side #links {
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    box-shadow: 0 0 50px #1b1b1b;
+}
+
+.right-side #links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right-side #links ul li {
+    list-style-type: none;
+    font-size: 17px;
+    font-family: var(--fira-code-font);
+}
+
+.right-side #links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.right-side #links ul li a:hover {
+    color: #afafaf;
+    cursor: pointer;
+}
+
+#openNavIcon {
+    display: flex;
+}
+
+#closeNavIcon {
+    display: none;
+}
+
+
+/* hero section */
+main section {
+    padding: 0 12px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1d1f27;
+}
+
+main section h3 {
+    font-size: 25px;
+    color: #0fac0f;
+    font-family: var(--fira-code-font);
+    font-weight: 700;
+    text-align: center;
+}
+
+main section .intro {
+    margin: 30px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main section .intro p {
+    color: #0fac0f;
+    font-family: var(--fira-code-font);
+    text-align: center;
+    font-size: 17px;
+}
+
+.heroBtn {
+    margin: 12px 0 0 0;
+    color: #00aaff;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: var(--fira-code-font);
+}
+
+.heroBtn:hover {
+    color: #15b600;
+}
+
+
+/* About section */
+#about {
+    padding: 60px 0;
+    background-color: #0a0909;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about h3 {
+    font-family: var(--fira-code-font);
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+#about .about-paras {
+    padding: 20px 0 0 0;
+    font-family: var(--fira-code-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+#about .about-paras p {
+    width: 80%;
+}
+
+
+/* Features Section */
+#features {
+    padding: 100px 0;
+    color: #b77afc;
+    text-align: center;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#features h3 {
+    text-decoration: underline;
+    font-family: var(--fira-code-font);
+    font-size: 25px;
+}
+
+#features .imp-points ul {
+    padding: 0 12px;
+    margin: 30px 0 0 0;
+    font-family: var(--fira-code-font);
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+}
+
+
+/* How it works section */
+#hiw {
+    padding: 0 0 100px 0;
+    color: #b77afc;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hiw h3 {
+    text-decoration: underline;
+    font-family: var(--fira-code-font);
+    font-size: 25px;
+}
+
+#hiw .imp-points ul {
+    padding: 0 12px;
+    margin: 30px 0 0 0;
+    font-family: var(--fira-code-font);
+    font-size: 17px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+#hiw .commands {
+    margin: 30px 0 0 0;
+    float: left;
+}
+
+#hiw .commands p {
+    padding: 0 12px 12px 12px;
+    font-family: var(--fira-code-font);
+    font-size: 18px;
+    display: flex;
+}
+
+#hiw .commands ul {
+    padding: 0 12px;
+    font-family: var(--fira-code-font);
+    font-size: 17px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Why console diary section */
+
+#wcd {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #15171b;
+    color: #8aff80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wcd h3 {
+    font-family: var(--fira-code-font);
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+#wcd .info-paras {
+    padding: 12px 12px 0 12px;
+    font-family: var(--fira-code-font);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer {
+    height: 150px;
+    background-color: #000;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: var(--fira-code-font);
+}
+
+/* Responsivenesss  */
+@media (max-width: 500px) {
+    #about .about-paras {
+        gap: 20px;
+    }
+
+    #about .about-paras p {
+        width: 90%;
+    }    
+}
+
+@media (max-width: 360px) {
+    header .logo h2 {
+        font-size: 20px;
+    }
+
+    .right-side #links {
+        width: 100%;
+        padding: 50px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        box-shadow: 0 0 50px #1b1b1b;
+    }
+
+    #navBtn {
+        z-index: 1000;
+    }
+}
